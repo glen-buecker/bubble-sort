@@ -1,12 +1,16 @@
 <?php
+/**
+ * @param array $arr
+ * @return array
+ */
 function bubbleSort(array $arr): array
 {
     $count = count($arr);
-    // Traverse through all array elements
+    // Iterate through all array elements
     for ($i = 0; $i < $count - 1; $i++) {
         // Last i element is already in place
         for ($j = 0; $j < $count - $i - 1; $j++) {
-            // traverse the array from 0 to n-i-1
+            // Iterate through array from 0 to n-i-1
             // Swap if the element found is greater
             // than the next element
             if ($arr[$j] > $arr[$j + 1]) {
